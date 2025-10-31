@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <title>Multi-Page jQuery Mobile Example</title>
+  </head>
+
+  <body>
+    <!-- Home Page -->
+    <div data-role="page" id="homepage">
+      <div data-role="header" data-theme="b">
+        <h1>Homepage</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h4>Welcome to the Homepage</h4>
+        <a
+          href="#aboutpage"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+        >
+          Go to About Page
+        </a>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="aboutpage">
+      <div data-role="header" data-theme="b">
+        <h1>About Page</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus
+          nemo ut odio eos, quas omnis blanditiis temporibus corporis tempora
+          ipsam vel cum ducimus beatae eaque quidem possimus reiciendis saepe!
+        </p>
+
+        <a
+          href="#homepage"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+        >
+          Back to Homepage
+        </a>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="c">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </body>
+</html>

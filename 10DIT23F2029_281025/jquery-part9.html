@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is website about jQuery Mobile" />
+    <meta name="keywords" content="jquery,html,css,jquery mobile" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+  </head>
+  <body>
+    <div data-role="page" id="page1">
+      <div data-role="header" data-theme="b">
+        <h1>HOME PAGE</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <ul
+          data-role="listview"
+          data-inset="true"
+          data-theme="b"
+          class="ui-corner-all"
+        >
+          <li data-icon="video">
+            <a href="#page2" data-transition="slide">Videos</a>
+          </li>
+          <li data-icon="audio">
+            <a href="#page3" data-transition="slideup">Audios</a>
+          </li>
+          <li data-icon="home">
+            <a href="#page4" data-transition="slide">Pictures</a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
+    </div>
+
+    <div data-role="page" id="page2">
+      <div data-role="header" data-theme="b">
+        <h1>VIDEO PANEL</h1>
+      </div>
+
+      <div data-role="main" class="ui-content" style="text-align:center;">
+        <h2>Welcome to my Video Page</h2>
+        <a
+          href="#page1"
+          class="ui-btn ui-corner-all ui-btn-b"
+          data-transition="flow"
+          >Back</a
+        >
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>Footer</h4>
+      </div>
+    </div>
+
+    <div data-role="page" id="page3">
+      <div data-role="header" data-theme="b">
+        <h1>AUDIO PANEL</h1>
+      </div>
+
+      <div data-role="main" class="ui-content" style="text-align:center;">
+        <h2>Welcome to my Audio Page</h2>
+        <a
+          href="#page1"
+          class="ui-btn ui-corner-all ui-btn-b"
+          data-transition="slidefade"
+          >Back</a
+        >
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>Footer</h4>
+      </div>
+    </div>
+
+    <div data-role="page" id="page4">
+      <div data-role="header" data-theme="b">
+        <h1>PICTURE PANEL</h1>
+      </div>
+
+      <div data-role="main" class="ui-content" style="text-align:center;">
+        <h2>Welcome to my Picture Page</h2>
+        <a
+          href="#page1"
+          class="ui-btn ui-corner-all ui-btn-b"
+          data-transition="slidefade"
+          >Back</a
+        >
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </body>
+</html>

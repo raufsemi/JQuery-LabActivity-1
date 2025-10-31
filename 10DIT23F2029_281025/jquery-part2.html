@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is about jQuery Mobile tutorials"
+    />
+    <meta name="keywords" content="jquery,html,css,jquery mobile" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <title>jQuery Mobile Example</title>
+  </head>
+  <body>
+    <!-- Homepage -->
+    <div data-role="page" id="homepage">
+      <div data-role="header" data-theme="b">
+        <h1>jQuery Mobile</h1>
+      </div>
+
+      <div data-role="main" class="ui-content" style="text-align:center;">
+        <h2>Welcome to the Homepage</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa
+          est libero, impedit quam exercitationem ullam nulla.
+        </p>
+        <a
+          href="#about"
+          data-transition="slide"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+          >Go to About</a
+        >
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about">
+      <div data-role="header" data-theme="b">
+        <h1>About Page</h1>
+      </div>
+
+      <div data-role="main" class="ui-content" style="text-align:center;">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus
+          nemo ut odio eos, quas omnis blanditiis temporibus corporis tempora
+          ipsam vel cum ducimus beatae eaque quidem possimus reiciendis saepe!
+        </p>
+        <a
+          href="#homepage"
+          data-transition="slide"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+          >Back to Homepage</a
+        >
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </body>
+</html>
