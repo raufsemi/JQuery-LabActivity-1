@@ -1,108 +1,128 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My GitHub Blog</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is about jQuery Mobile tutorials"
+    />
+    <meta name="keywords" content="jquery, html, css, jquery mobile" />
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <title>jQuery Mobile Tutorials</title>
 
-<style>
-  :root {
-    --bg: #0d1117;
-    --card: #161b22;
-    --text: #c9d1d9;
-    --muted: #8b949e;
-    --accent: #58a6ff;
-  }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: 'Inter', sans-serif;
-    padding: 20px; max-width: 900px; margin-inline: auto;
-  }
-  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-  h1 { font-size: 1.4rem; }
-  a { color: var(--accent); text-decoration: none; }
-  .cards {
-    display: grid; gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    margin-top: 20px;
-  }
-  .card {
-    background: var(--card); border-radius: 8px; padding: 16px;
-    cursor: pointer; transition: transform .2s;
-  }
-  .card:hover { transform: translateY(-4px); }
-  .card h3 { margin: 0 0 8px 0; font-size: 1.1rem; }
-  .card p { color: var(--muted); margin: 0; font-size: 0.9rem; }
-  .overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.7);
-    display: none; justify-content: center; align-items: center;
-    padding: 10px;
-  }
-  .overlay.open { display: flex; }
-  .reader {
-    background: var(--card); color: var(--text);
-    padding: 20px; border-radius: 10px;
-    max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto;
-  }
-  pre { background: #0d1117; padding: 10px; border-radius: 6px; overflow-x: auto; }
-  @media (max-width: 600px) {
-    body { padding: 12px; }
-    .reader { padding: 14px; }
-  }
-</style>
-</head>
+    <!-- jQuery Mobile CSS -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+  </head>
 
-<body>
-  <header>
-    <h1>📝 Rauf's GitHub Blog</h1>
-    <a href="#" id="aboutLink">About</a>
-  </header>
+  <body>
+    <!-- Home Page -->
+    <div data-role="page" id="page1">
+      <!-- Header -->
+      <div data-role="header" data-theme="b">
+        <h1>HOME PAGE</h1>
+      </div>
 
-  <section id="cards" class="cards">Loading...</section>
+      <!-- Main Content -->
+      <div data-role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+          <li data-icon="video">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part1.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 1</a
+            >
+          </li>
+          <li data-icon="audio">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part2.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 2</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part3.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 3</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part4.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 4</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part5.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 5</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part6.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 6</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part7.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 7</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part8.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 8</a
+            >
+          </li>
+          <li data-icon="grid">
+            <a
+              href="/10DIT23F2029_281025
+/jquery-part9.html"
+              data-transition="slide"
+              data-ajax="false"
+              >PART 9</a
+            >
+          </li>
+        </ul>
+      </div>
 
-  <div class="overlay" id="overlay">
-    <div class="reader">
-      <button id="closeBtn" style="float:right;color:var(--muted);background:none;border:none;">✕</button>
-      <h2 id="postTitle"></h2>
-      <div id="postDate" style="color:var(--muted);font-size:0.9rem;margin-bottom:10px"></div>
-      <div id="postContent"></div>
+      <!-- Footer -->
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; ARRAUF ISEMI - 10DIT23F2029</h4>
+      </div>
     </div>
-  </div>
 
-<script>
-async function loadPosts() {
-  const res = await fetch('posts/posts.json');
-  const posts = await res.json();
-  const container = document.getElementById('cards');
-  container.innerHTML = '';
-  posts.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `<h3>${p.title}</h3><p>${p.excerpt}</p>`;
-    card.onclick = () => openPost(p);
-    container.appendChild(card);
-  });
-}
-
-async function openPost(post) {
-  const md = await fetch('posts/' + post.file).then(r => r.text());
-  document.getElementById('postTitle').innerText = post.title;
-  document.getElementById('postDate').innerText = post.date;
-  const html = marked.parse(md);
-  document.getElementById('postContent').innerHTML = html;
-  document.querySelectorAll('pre code').forEach(hljs.highlightElement);
-  document.getElementById('overlay').classList.add('open');
-}
-document.getElementById('closeBtn').onclick = () => {
-  document.getElementById('overlay').classList.remove('open');
-};
-
-loadPosts();
-</script>
-</body>
+    <!-- jQuery and jQuery Mobile JS -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </body>
 </html>
